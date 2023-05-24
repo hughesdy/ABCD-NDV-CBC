@@ -8,7 +8,7 @@ This is a page housing the code relevant to our work: Hughes, D.E., Kunitoki, K.
 Link to full text: https://rdcu.be/dcJWk
 # ----------------------------------------------------
 
-# partitioningSumStats.r
+## partitioningSumStats.r
 The data referenced in partitioningSumStats.r can be found in the "partitioning" directory within this repository. 
 
 
