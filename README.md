@@ -23,5 +23,5 @@ This script shows how the main heatmaps were created (see Figure 2a for an examp
 
 #### ----------------------------------------------------
 
-I am always in awe of reading others' scripts when they are well-commented. Comments are the bedrock of reproducible science! I am always trying to improve, so if you have suggestions please share. Feel free to reach out to me with any questions about the scripts: hughesdy@g.ucla.edu 
+I am always in awe of reading others' scripts when they are well-commented. Comments are a pillar of reproducible science! I am always trying to improve, so if you have suggestions please share. Feel free to reach out to me with any questions about the scripts: hughesdy@g.ucla.edu 
 
