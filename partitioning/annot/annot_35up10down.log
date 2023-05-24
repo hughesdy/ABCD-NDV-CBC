@@ -1,0 +1,51 @@
+Welcome to MAGMA v1.08bb (linux)
+Using flags:
+	--annotate window=35,10
+	--snp-loc MAGMA/ref_data/g1000_eur.bim
+	--gene-loc MAGMA/gene_loc/NCBI37.3.gene.loc
+	--out MAGMA/annotation/annot_35up10down/annot_35up10down
+
+Start time is 14:39:54, Thursday 04 Mar 2021
+
+Starting annotation...
+Reading gene locations from file MAGMA/gene_loc/NCBI37.3.gene.loc... 
+	adding window: 35000bp (before), 10000bp (after)
+	19427 gene locations read from file
+	chromosome  1: 2016 genes
+	chromosome  2: 1226 genes
+	chromosome  3: 1050 genes
+	chromosome  4: 745 genes
+	chromosome  5: 856 genes
+	chromosome  6: 1016 genes
+	chromosome  7: 906 genes
+	chromosome  8: 669 genes
+	chromosome  9: 775 genes
+	chromosome 10: 723 genes
+	chromosome 11: 1275 genes
+	chromosome 12: 1009 genes
+	chromosome 13: 320 genes
+	chromosome 14: 595 genes
+	chromosome 15: 586 genes
+	chromosome 16: 817 genes
+	chromosome 17: 1147 genes
+	chromosome 18: 271 genes
+	chromosome 19: 1389 genes
+	chromosome 20: 527 genes
+	chromosome 21: 215 genes
+	chromosome 22: 442 genes
+	chromosome  X: 805 genes
+	chromosome  Y: 47 genes
+Reading SNP locations from file MAGMA/ref_data/g1000_eur.bim... 
+	22665064 SNP locations read from file
+	of those, 12522539 (55.25%) mapped to at least one gene
+Writing annotation to file MAGMA/annotation/annot_35up10down/annot_35up10down.genes.annot
+	for chromosome  1, 1 gene is empty (out of 2016)
+	for chromosome  2, 1 gene is empty (out of 1226)
+	for chromosome  9, 2 genes are empty (out of 775)
+	for chromosome 10, 2 genes are empty (out of 723)
+	for chromosome  X, 10 genes are empty (out of 805)
+	for chromosome  Y, 47 genes are empty (out of 47)
+	at least one SNP mapped to each of a total of 19364 genes (out of 19427)
+
+
+End time is 14:41:08, Thursday 04 Mar 2021 (elapsed: 00:01:14)
