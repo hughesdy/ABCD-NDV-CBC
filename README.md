@@ -13,7 +13,7 @@ Hopefully, the comments within the script will guide you. In brief, this is the 
 
 The data referenced in partitioningSumStats.r can be found in the "partitioning" directory within this repository. 
 
-Side note: I think this is a pretty cool tool. By using the annotate.gene2snps function, you can really feed it any set of genes and thus partition your summary statistics based on any arbitrary (hypothesis/data-driven) set of genes. This version uses an annotation file that was created via MAGMA (log file is available in the "partitioning" directory) and annotates SNPs to genes within the gene range and also 35 kb upstream and 10 kb downstream of the gene. Changing the window size will change the results of course. You can view the log file in the "partitioning" directory to look at the commands to use. More MAGMA documentation can be found here: https://ctg.cncr.nl/software/magma 
+Side note: I think this is a pretty cool tool. By using the annotate.gene2snps function, you can really feed it any set of genes and thus partition your summary statistics based on any arbitrary (hypothesis- / data-driven) set of genes. This version uses an annotation file that was created via MAGMA (log file is available in the "partitioning" directory) and annotates SNPs to genes within the gene range and also 35 kb upstream and 10 kb downstream of the gene. Changing the window size will change the results of course. You can view the log file in the "partitioning" directory to look at the commands to use. More MAGMA documentation can be found here: https://ctg.cncr.nl/software/magma 
 
 
 
