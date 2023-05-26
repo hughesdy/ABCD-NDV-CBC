@@ -18,9 +18,29 @@ Side note: I think this is a pretty cool tool. By using the annotate.gene2snps f
 
 ## makingHeatmaps.r
 This script shows how the main heatmaps were created (see Figure 2a for an example). The example shown here is for baseline data. 
+#### ----------------------------------------------------
 
+## commonfactorGWAS_NDV.R
+This script generates summary statistics for the commonfactor NDV. The GenomicSEM site has a wonderful explanation + tutorial for more information: https://github.com/GenomicSEM/GenomicSEM
+#### ----------------------------------------------------
 
+## userspecGWAS_NDV.R
+This script generates summary statistics for the userspec NDV (aka correlated factor model).
+#### ----------------------------------------------------
 
+## write_userspecGWAS_scripts.sh
+This is a bash script that chunks the summary statistics into even parts so that you can submit each to a compute cluster; an example code of how you would submit the outputs of "write_userspecGWAS_scripts.sh" can be found in "submit_userspecGWAS_scripts_slurm.sh". This script takes 3 arguments: l, s, o. 
+
+-l and -s will specify the path to the ldsc and sumstats (respectively) output from 'userspecGWAS_NDV.R' i.e., the 2 instances where saveRDS is called. -o will specify the output directory for the final chunks of the summary statistics. IMPORTANTLY, the output directory should already be created AND should have three folders within names 'f1', 'f2', and 'f3'. If you are running your own version of this with more or less than 3 factors, you'll have to change that part of this script.
+
+An example of a call would be:
+      bash write_userspecGWAS_scripts.sh -l path/to/ldsc -s path/to/sumstats -o path/to/where/final/rscripts/will/live
+      
+Of note, this same logic can be applied to the commonfactor model to make generation of summary statistics more efficient/quick
+#### ----------------------------------------------------
+
+## submit_userspecGWAS_scripts_slurm.sh
+As noted above, this script is just an example of how you could submit your auto-generated Rscripts from "write_userspecGWAS_scripts.sh". If you happen to be from Martinos (shout out Martinos), this example is formatted for slurm so you'll need minimum editing :)
 #### ----------------------------------------------------
 
 I am always in awe of reading others' scripts when they are well-commented. Comments are a pillar of reproducible science! I am always trying to improve, so if you have suggestions please share. Feel free to reach out to me with any questions about the scripts: hughesdy@g.ucla.edu 
